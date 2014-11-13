@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexNetSentry", "net45\ApexNetSentry\ApexNetSentry.csproj", "{43F3FE8B-AE1D-4326-9DA3-E4E9B9765341}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexNetSentry", "net40\ApexNetSentry\ApexNetSentry.csproj", "{43F3FE8B-AE1D-4326-9DA3-E4E9B9765341}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexNetSentrySample", "ApexNetSentrySample\ApexNetSentrySample.csproj", "{DCDC06C8-358F-4B30-AEC6-F3D897414701}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET45", "NET45", "{72B0880E-2CB5-4E4C-921E-55845759DDCB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET40", "NET40", "{72B0880E-2CB5-4E4C-921E-55845759DDCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
