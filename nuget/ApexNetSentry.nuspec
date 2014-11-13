@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ApexNetSentry</id>
+    <version>1.0.0.0</version>
+    <title>ApexNetSentry</title>
+    <authors>Stefano Teodorani</authors>
+    <owners>Stefano Teodorani</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Apex-net Log Interface Helper for Sentry (only for internal use)</description>
+    <releaseNotes>https://github.com/Apex-net/ApexNetSentry/releases</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>apexnet log sentry</tags>
+  </metadata>
+</package>
