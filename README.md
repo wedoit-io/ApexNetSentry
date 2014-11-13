@@ -5,7 +5,7 @@ ApexNetSentry è una libreria distribuita attraverso nuget che consente di centr
 
 Usare ApexNetSentry
 ---
-In questo breve tutorial vedremo un esempio su come recuperare i dati degli ordini da AppManager usando AMHelper
+In questo breve tutorial vediamo un esempio su come utilizzare la libreria
 
 1. Creare una nuova solution in Visual studio
 
