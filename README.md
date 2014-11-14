@@ -10,9 +10,9 @@ In questo breve tutorial vediamo un esempio su come utilizzare la libreria
 1. Creare una nuova solution in Visual studio
 
 2. Installare con nuget la libreria
-  ```
-    PM> Install-Package ApexNetSentry
-  ```
+```
+  PM> Install-Package ApexNetSentry
+```
 
 3. Aggiungere lo using in cima progetto
 ```c#
