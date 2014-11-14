@@ -24,6 +24,11 @@ namespace ApexNetSentrySample
             tags["TAG"] = "TAG1";
             Logger.CaptureMessage(ApiKey, "Messaggio 3", SentryError.Info, tags);
 
+            var a = new Exception();
+
+            Logger.CaptureException(ApiKey, a, "n" , SentryError.Info, tags);
+
+
 
         }
     }

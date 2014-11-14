@@ -38,7 +38,7 @@ namespace ApexNetSentry
             }
 
 
-            public static void CaptureException(string ApiKey, Exception ex, string Message, SentryError level = SentryError.Info, Dictionary<string, string> tags = null)
+            public static void CaptureException(string ApiKey, Exception ex, string Message = null, SentryError level = SentryError.Info, Dictionary<string, string> tags = null)
             {
                 var ravenClient = new RavenClient(ApiKey);
 

@@ -40,10 +40,44 @@ In questo breve tutorial vediamo un esempio su come utilizzare la libreria
 
 6. Usare CaptureException per catturare le eccezzioni
   ```c#
-    // Quali dati contiene il mio AM ?
-	
 	Logger.CaptureException(ApiKey, ex);
   ```
+Esempio in Powershell
+---
+Mettere nella stessa cartella dello script le dll:
+
+* ApexNetSentry.sll
+* SharpRaven.dll
+* Newtonsoft.Json.dll
+
+Creare un file con estensione ps1 (es: SentryTest.ps1) e incollarci il seguente testo.
+
+```
+# Loading Assembly
+Add-Type -Path "C:\Work2\PSHSentry\ApexNetSentry.dll"
+
+# Setting ApiKey
+$ApiKey = "http://1cff7fad696c346e8966d0b0c82439df8:79df31b6aa9642a3bef837f21f4132f1@sentry.apexnet.it/12"
+
+# Send a Capture Message mode 1
+[ApexNetSentry.Logger]::CaptureMessage($ApiKey, "Test from powershell")
+
+# Send a Capture Message mode 2 (with type)
+[ApexNetSentry.Logger]::CaptureMessage($ApiKey, "Test fatal from powershell", [ApexNetSentry.SentryError]::Fatal)
+
+
+# Send exception - mode 1
+Try
+{
+    $junk = 1/0
+}
+Catch
+{
+    [ApexNetSentry.Logger]::CaptureException($ApiKey, $_.Exception, "Exception from powershell", [ApexNetSentry.SentryError]::Fatal)
+}
+```
+
+Le eccezioni verranno mandate nel progetto Sandbox di sentry.apexnet.it
 
 Dipendenze
 ---
