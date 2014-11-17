@@ -33,7 +33,7 @@ Logger.CaptureMessage(ApiKey, "Messaggio 1");
 // Esempio 2 con invio di una eccezione
 Logger.CaptureMessage(ApiKey, "Messaggio 2", SentryError.Warning);
 
-// Esempio 3 con ta ersonalizzati
+// Esempio 3 con tag personalizzati
 Dictionary<string, string> tags = new Dictionary<string, string>();
 tags["TAG"] = "TAG1";
 Logger.CaptureMessage(ApiKey, "Messaggio 3", SentryError.Info, tags);
