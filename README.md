@@ -27,10 +27,13 @@ string ApiKey = "http://1cff7fad696c346e8966d0b0c82439df8:79df31b6aa9642a3bef837
 
 * Chiamare il metodo per la cattura di un messaggio
 ```c#
+// Esempio 1 con invio di un messaggio generico
 Logger.CaptureMessage(ApiKey, "Messaggio 1");
 
+// Esempio 2 con invio di una eccezione
 Logger.CaptureMessage(ApiKey, "Messaggio 2", SentryError.Warning);
 
+// Esempio 3 con ta ersonalizzati
 Dictionary<string, string> tags = new Dictionary<string, string>();
 tags["TAG"] = "TAG1";
 Logger.CaptureMessage(ApiKey, "Messaggio 3", SentryError.Info, tags);
