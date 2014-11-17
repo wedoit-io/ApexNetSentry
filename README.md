@@ -1,6 +1,6 @@
 ApexNetSentry
 ===
-ApexNetSentry è una libreria distribuita attraverso nuget che consente di centralizzare la gestione delle eccezzioni su sentry.apexnet.it
+ApexNetSentry è una libreria distribuita attraverso nuget che consente di centralizzare la gestione delle eccezioni su sentry.apexnet.it
 
 
 Usare ApexNetSentry
