@@ -54,7 +54,7 @@ Mettere nella stessa cartella dello script le dll:
 Creare un file con estensione ps1 (es: SentryTest.ps1) e incollarci il seguente testo.
 
 ``` c#
-# Loading Assembly
+# Loading Assembly (setting correct path)
 Add-Type -Path "C:\Work2\PSHSentry\ApexNetSentry.dll"
 
 # Setting ApiKey
